@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire 3</title>
+</head>
+
+<style>
+    
+    fieldset{
+        font-size: medium;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: oblique;
+        display:  grid;
+        color: rgb(88, 0, 0);
+        resize: vertical;
+        float: center;
+        fill: black;
+        nav-down: auto;
+        padding: 10%;
+        kerning: 10%;
+        flex-direction: column-reverse;
+        width: 60%;
+        place-content: unset;
+        animation: backwards;
+
+        
+        
+        
+    }
+    #bt{
+        color:black;
+        size: 50%;
+        font-size: larger;
+        
+        display: grid;
+    }
+    input{
+        background-color: rgb(223, 223, 224);
+    }
+</style>
+<body>
+    <form name="form1" method="get" action="">
+        <fieldset >
+            <legend>Inscreption :</legend>
+            <table class="pagination">
+                <tr>
+                    <!-- id ===>for -->
+                    <td><label for="n">Nom :</label></td> 
+                    <td><input type="text" name="name" id="n" placeholder="Inserer Votre nom" required></td>
+                </tr>
+                <tr>
+                    
+                    <td><label for="m">Prenom  :</label></td> 
+                    <td><input type="text" name="name" id="m" placeholder="Inserer Votre Prenom" required></td>
+                </tr>
+                <tr>
+                    
+                    <td><label for="e">Password :</label></td> 
+                    <td><input type="password" name="password" id="e" placeholder="Password" required minlength="3"></td>
+                </tr>
+                <tr>
+                    
+                    <td><label for="m">date n'aissan :</label></td> 
+                    <td><input type="date" name="date" id="m" placeholder="Inserer Votre Prenom" required></td>
+                </tr>
+                <tr>
+                    
+                    <td><label for=""age>Age  :</label></td> 
+                    <td><input type="number" name="age" id="age" placeholder="Inserer Votre age" required min="18"></td>
+                </tr>
+                <tr>
+                    
+                    <td><label for="week">Age  :</label></td> 
+                    <td><input type="week" name="week" id="week" placeholder="Inserer Votre age" required min="18"></td>
+                </tr>
+                <tr>
+                    <td><label for="ne"></label> Niveu d'etude :</td>
+                    <td><select name="niv etude" id="ne">    
+                    <option value="-1">Selectionner votre Niveu</option>
+                    <option value="bac">bac</option>
+                    <option value="Ts">TS</option>
+                    <option value="m1">Master 1</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="check"></label></td>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                </tr>
+<!-- valider == clicker -->
+                <tr> <td ><input type="submit" name="valider" value="Send !" id="bt"></tr></td>
+            </table>
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>
