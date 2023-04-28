@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  <meta charset="UTF-8">      <title>Title</title>  </head>
+<body>
+<form name="form1" method="post" action="" enctype="multipart/form-data">
+    <fieldset>   <legend>Incription : </legend>
+   <table>
+       <tr>
+       <td> <label for="util">Utilisateur :</label></td>
+       <td><input type="text" name="user" id="util" placeholder="Inserer la votre nom"  required></td>
+   </tr>
+       <tr>
+           <td> <label for="p">Password :</label></td>
+           <td><input type="password" name="pass" id="p" minlength="3"></td>
+       </tr>
+       <tr>
+       <td> <label for="dn">DateNaiss :</label></td>
+       <td><input type="date" name="daten" id="dn" ></td>
+   </tr>
+       <tr>
+           <td> <label for="ne">Nombre D'exemplaire :</label></td>
+           <td><input type="number" name="nbex" id="ne" min="5" max="65" step="0.01" ></td>
+       </tr>
+       <tr>
+           <td> <label for="se">Selectionner la semaine :</label></td>
+           <td><input type="week" name="sem" id="se" ></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td>
+               <select name="nivetude"> <!-- selected -->
+                   <option value="-1">--- Selectionner votre niv etude ---</option>
+                   <option value="b">Bac</option>
+                   <option value="t">TS</option>
+                   <option value="m1" >Master1</option>
+                   <option value="m2">Master2</option>
+                   <option value="p">PGS</option>
+               </select>
+           </td>
+       </tr>
+       <tr>
+           <td> <label for="se">Selectionner le(les) type(s)  :</label></td>
+           <td>
+               <input type="checkbox" name="doc" value="docx">DOCX
+               <input type="checkbox" name="pdf" value="pdf">PDF
+               <input type="checkbox" name="xls" value="xlsx">XLSX
+               <input type="checkbox" name="ps" value="ps">PS
+           </td>
+       </tr>
+       <tr>
+           <td> <label for="se">Civilite :</label></td>
+           <td> <!--checked -->
+               <input type="radio" name="civilite" value="mr" >Mr
+               <input type="radio" name="civilite" value="mme">Mme
+           </td>
+       </tr>
+       <tr>
+           <td></td>
+           <td>
+               <select name="nivetude" multiple >
+                   <option value="ar">Arabe</option>
+                   <option value="an">Anglais</option>
+                   <option value="fr" >Francais</option>
+
+               </select>
+           </td>
+       </tr>
+       <tr>
+           <td></td>
+           <td><input type="hidden" name="code" vlaue="340"></td>
+       </tr>
+       <tr>
+           <td>Photo :</td>
+           <td><input type="file" name="file" ></td>
+       </tr>
+       <tr>
+           <td>Time:</td>
+           <td><input type="time" name="t"></td>
+       </tr>
+       <tr>
+    <td><input type="submit" name="valider" value="Envoyer"></td>
+    <td><input type="reset" name="reset"></td>
+</tr>
+   </table>
+    </fieldset>
+</form>
+</body>
+</html>

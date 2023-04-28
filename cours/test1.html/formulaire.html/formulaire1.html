@@ -5,20 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        div,td{
-            text-align: center;
-            align-items: center;
-            align-content: center;
-            
-            
-        }
-        
-    </style>
+   
 </head>
 <body>
-   <div>
-    <form action="Exercice" method="get">
+    
+   <div style="text-align: center;">
+    <form action="Exercice" method="get" enctype="multipart/form-data">
         <h1>Exercice</h1>
         <fieldset>
             
@@ -27,26 +19,26 @@
                 
              <td>
                  <tr><label for="prenom">Prénom  : </label></tr>
-                 <tr><input type="text" id="prenom"></tr>
+                 <tr><input type="text" id="prenom" required></tr>
                  <tr><label for="prenom">    nom   : </label></tr>
-                 <tr><input type="text" id=" nom" placeholder="Tapez votre nom"></tr>
+                 <tr><input required type="text" id=" nom" placeholder="Tapez votre nom"></tr>
          
              </td>
 
              <br>
 
-                <tr class="td"><label for="mdps">Votre mot de passe (max 6 caractere) </label><input type="password" maxlength="6" size="1"><td></td></tr>    
+                <tr class="td"><label for="mdps">Votre mot de passe (max 6 caractere) </label><input type="password" maxlength="6" size="1" required><td></td></tr>    
 
                  <br>
 
              <tr><input type="checkbox" id="ch"><label for="ch">Je désire recevoir de la publicité</label></tr>
              <br>
-             <tr><label>Langue de correspondance : </label><input type="radio" name="lang" id="lang1"><label for="lang1">Francais</label>
+             <tr><label>Langue de correspondance : </label><input type="radio" name="lang" id="lang1" checked><label for="lang1">Francais</label>
                 <input type="radio" name="lang" id="lang2"><label for="lang2">English</label> </tr>
               <br>
               <tr><label for="">Sélectionnez les mois désirée ci-dissous : </label></tr>  
               <br>
-                <select name="month" id="month" size="6" multiple>
+                <select name="month" id="month" size="6" multiple required>
                     <option value="janvier">Janvier</option>
                     <option value="février">Février</option>
                     <option value="mars">Mars</option>
@@ -61,27 +53,38 @@
                     <option value="décembre">Décembre</option>
                 </select>
                 <br>
-                <tr><label for="niveau">Votre niveau d'etude</label> <select name="niveu" id="">
+                <tr>
                     
-                       <tr>
-                        <select name="niveau" id="niv">
-                            <option value="Doctorat" name="doc"></option>
-                            <option value="Master" name="Mas"></option>
-                        </select>
-                       </tr> 
-                        
-                    
+                    <label for="niv">Votre niveau d'étude  :  </label>
+                    <select name="niveau" id="niv" required>
+                        <option value="dr">Doctorat</option>
+                        <option value="mas">Master</option>
+                        <option value="lis">License </option>
+                        <option value="ts">TS</option>
+                    </select>
+                </tr>
+                <br>
+                <tr>
+                    <label for="text">Vos remarque</label>
 
-                </select></tr>
-                
-               
+                </tr>
+                <br>
+                <tr>
+                    <textarea name="remarque" id="text" cols="50" rows="10" ></textarea>
+                </tr>
+
+                <br>
+                <tr>
+                    <label for="photo">Envoyez votre photo </label>
+                    <input type="text" disabled>
+                    <input type="file" id="file" required>
+                </tr> 
+                <br>
+                <tr><button type="submit">Envoyer</button><button type="reset">réinitialiser</button></tr>
+                <br>
+                <tr><button type="submit">Vérifier les données</button></tr>
 
 
-                
-
-             
-
-             
             </table>
         </fieldset>
        </form>
