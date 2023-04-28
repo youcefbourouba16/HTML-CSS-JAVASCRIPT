@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,td{
+            text-align: center;
+            align-items: center;
+            align-content: center;
+            
+            
+        }
+        
+    </style>
+</head>
+<body>
+   <div>
+    <form action="Exercice" method="get">
+        <h1>Exercice</h1>
+        <fieldset>
+            
+            <header><h1 id="m1">FORMULAIRE</h1></header>
+            <table>
+                
+             <td>
+                 <tr><label for="prenom">Prénom  : </label></tr>
+                 <tr><input type="text" id="prenom"></tr>
+                 <tr><label for="prenom">    nom   : </label></tr>
+                 <tr><input type="text" id=" nom" placeholder="Tapez votre nom"></tr>
+         
+             </td>
+
+             <br>
+
+                <tr class="td"><label for="mdps">Votre mot de passe (max 6 caractere) </label><input type="password" maxlength="6" size="1"><td></td></tr>    
+
+                 <br>
+
+             <tr><input type="checkbox" id="ch"><label for="ch">Je désire recevoir de la publicité</label></tr>
+             <br>
+             <tr><label>Langue de correspondance : </label><input type="radio" name="lang" id="lang1"><label for="lang1">Francais</label>
+                <input type="radio" name="lang" id="lang2"><label for="lang2">English</label> </tr>
+              <br>
+              <tr><label for="">Sélectionnez les mois désirée ci-dissous : </label></tr>  
+              <br>
+                <select name="month" id="month" size="6" multiple>
+                    <option value="janvier">Janvier</option>
+                    <option value="février">Février</option>
+                    <option value="mars">Mars</option>
+                    <option value="avril">Avril</option>
+                    <option value="mai">Mai</option>
+                    <option value="juin">Juin</option>
+                    <option value="juillet">Juillet</option>
+                    <option value="août">Août</option>
+                    <option value="septembre">Septembre</option>
+                    <option value="octobre">Octobre</option>
+                    <option value="novembre">Novembre</option>
+                    <option value="décembre">Décembre</option>
+                </select>
+                <br>
+                <tr><label for="niveau">Votre niveau d'etude</label> <select name="niveu" id="">
+                    
+                       <tr>
+                        <select name="niveau" id="niv">
+                            <option value="Doctorat" name="doc"></option>
+                            <option value="Master" name="Mas"></option>
+                        </select>
+                       </tr> 
+                        
+                    
+
+                </select></tr>
+                
+               
+
+
+                
+
+             
+
+             
+            </table>
+        </fieldset>
+       </form>
+    </div>
+</body>
+</html>
