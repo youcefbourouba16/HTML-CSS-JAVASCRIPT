@@ -1,0 +1,36 @@
+p{
+    color: bisque;
+    font-size: large;
+    font-family: initial;
+}
+h1{
+    color: blueviolet;
+    font-size: medium;
+}
+.p3{
+    color: black;
+    font-size: larger;
+}
+#p4{
+    color: cyan;
+}
+div h1{
+    color: crimson;
+}
+div{
+    color: blue;
+    border: 10px solid green;
+    size: 50px;
+    background-color: brown;
+    height: inherit;
+    width: 50px;
+}
+input[type="text"]
+{
+    background-color: black;
+    color: aliceblue;
+}
+input[type="submit"]{
+    color: green;
+    background-color: aqua;
+}

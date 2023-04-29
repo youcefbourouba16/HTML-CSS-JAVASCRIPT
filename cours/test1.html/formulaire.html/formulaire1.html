@@ -5,35 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/CSS/MonCSS/formCss.css">
+       
    
 </head>
 <body>
     
-   <div style="text-align: center;">
-    <form action="Exercice" method="get" enctype="multipart/form-data">
-        <h1>Exercice</h1>
+   <header><div id="image1"><img src="/images/forms_2020q4_48dp.png" alt="form" id="image"><br>
+    <label for="image" id="imagelb">FORM</label> </div></header>
+    <form action="Exercice" method="post" enctype="multipart/form-data" style="text-align: center;">
+        <h1 style="font-family: monospace;">Exercice</h1>
         <fieldset>
             
-            <header><h1 id="m1">FORMULAIRE</h1></header>
+            <h1 style="border: 1px solid blue">FORMULAIRE</h1>
             <table>
                 
              <td>
-                 <tr><label for="prenom">Prénom  : </label></tr>
-                 <tr><input type="text" id="prenom" required></tr>
-                 <tr><label for="prenom">    nom   : </label></tr>
+                 <tr><label class="name" for="prenom" >-Prénom  : </label></tr>
+                 <tr><input class="name" type="text" id="prenom" required></tr>
+                 <tr><label for="prenom">    -nom   : </label></tr>
                  <tr><input required type="text" id=" nom" placeholder="Tapez votre nom"></tr>
          
              </td>
 
              <br>
 
-                <tr class="td"><label for="mdps">Votre mot de passe (max 6 caractere) </label><input type="password" maxlength="6" size="1" required><td></td></tr>    
+                <tr><label for="mdps">-Votre mot de passe (max 6 caractere) </label><input type="password" maxlength="6" size="1" required><td></td></tr>    
 
                  <br>
 
-             <tr><input type="checkbox" id="ch"><label for="ch">Je désire recevoir de la publicité</label></tr>
+             <tr><input type="checkbox" id="ch"><label for="ch">Je désire recevoir de la publicité.</label></tr>
              <br>
-             <tr><label>Langue de correspondance : </label><input type="radio" name="lang" id="lang1" checked><label for="lang1">Francais</label>
+             <tr><label>-Langue de correspondance : </label><input type="radio" name="lang" id="lang1" checked><label for="lang1">Francais</label>
                 <input type="radio" name="lang" id="lang2"><label for="lang2">English</label> </tr>
               <br>
               <tr><label for="">Sélectionnez les mois désirée ci-dissous : </label></tr>  
@@ -55,7 +58,7 @@
                 <br>
                 <tr>
                     
-                    <label for="niv">Votre niveau d'étude  :  </label>
+                    <label for="niv">-Votre niveau d'étude  :  </label>
                     <select name="niveau" id="niv" required>
                         <option value="dr">Doctorat</option>
                         <option value="mas">Master</option>
@@ -65,7 +68,7 @@
                 </tr>
                 <br>
                 <tr>
-                    <label for="text">Vos remarque</label>
+                    <label for="text">-Vos remarque-</label>
 
                 </tr>
                 <br>
@@ -79,15 +82,14 @@
                     <input type="text" disabled>
                     <input type="file" id="file" required>
                 </tr> 
-                <br>
-                <tr><button type="submit">Envoyer</button><button type="reset">réinitialiser</button></tr>
-                <br>
+                <h1></h1>
+                <tr><button type="submit">Envoyer</button></tr><p></p><tr><button type="reset">réinitialiser</button></tr>
+                <p></p>
                 <tr><button type="submit">Vérifier les données</button></tr>
 
 
             </table>
         </fieldset>
        </form>
-    </div>
 </body>
 </html>

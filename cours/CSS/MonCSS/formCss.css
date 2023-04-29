@@ -1,0 +1,111 @@
+label,h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: oblique;
+    
+    color: rgb(7, 0, 68);
+    padding: 3px;
+    
+
+    
+}
+
+input[type="text"]
+{
+    
+    text-transform: capitalize;
+    border: 2px dotted rgb(175, 174, 255) ;
+    background-color: rgb(228, 255, 255);
+
+    
+    
+
+}
+input[type="password"]{
+    color: rgb(0, 0, 0);
+    border: none ;
+    background-color: rgb(253, 253, 253);
+    border-radius: 4px;
+}
+
+#imagelb{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(253, 253, 253);
+    left: 50%;
+    padding: 12px;
+    font-weight: lighter;
+    
+   
+
+
+}
+header{
+    background-image: url(/images/360_F_302040655_IEH9RyDlu7LL8YCLjgL1IskhrpOlmlSv.jpg);
+    
+    height: 125px;
+    width: 100%;
+
+    
+}
+
+#image1{
+   
+   position: absolute;   
+   top: 5%;
+   left: 48%;
+   
+
+   
+     
+}
+#image{
+    width: 60px;
+    width: 60px;
+    
+}
+select{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(233, 233, 233); 
+}
+select option:checked{
+    background-color:  green;
+    color: aliceblue;
+
+}
+select::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  select::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+  }
+  
+  select::-webkit-scrollbar-thumb {
+    background-color: rgb(119, 131, 179);
+  }
+  textarea{
+    font-style: italic;
+    padding: 12px;
+    color: darkslategray;
+    
+  }
+  button{
+    background-color: rgb(155, 190, 190);
+    color: black;
+    border:  none;
+    border-radius: 10px;
+    font-size: larger;
+    padding: 5px 10px;
+  }
+  button:hover{
+    background-color: rgb(7, 250, 7);
+    cursor: pointer;
+
+  }
+  body{
+    background-color: rgb(198, 255, 228);
+  }
+  
+
+  
