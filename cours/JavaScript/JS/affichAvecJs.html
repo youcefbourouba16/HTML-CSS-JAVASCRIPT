@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/JS/monJs.js"></script>
+    <script>
+        /*
+        function affich() {
+            alert("Alert");
+            
+        }
+        function confirm () {
+            confirm("Confirmation");
+            
+        }
+        function promptMoi() {
+            prompt("Search ? ");
+            
+        }
+        function imprimerMoi() {
+            window.print();
+        }
+        */
+    </script>
+</head>
+<body>
+    <input type="button" value="alert" onclick="affich()">
+    <input type="button" value="confirmation" onclick="confirm()">
+    <input type="button" value="prompt" onclick="promptMoi()">
+    <input type="button" value="imprimer"  onclick="imprimerMoi()">
+    <p id="p1">Mon paragraph</p>
+    <script>
+        document.writeln("Message ");
+        
+    </script>
+
+    <script>
+        var x=5,y=8;
+        const p=3.14;
+        document.getElementById("p1").innerHTML = document.getElementById("p1").innerHTML+" "+x+" * "+y+" egaul = "+(x*y);
+    </script>
+
+</body>
+
+</html>

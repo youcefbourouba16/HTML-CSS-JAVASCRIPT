@@ -5,7 +5,11 @@ label,h1 {
     
     color: rgb(7, 0, 68);
     padding: 3px;
-    
+    letter-spacing: 1px;
+   
+      /*  direction: ltr; left to right */
+      /*   line-height: 20px;; ch7al ykhlf ster */
+      
 
     
 }
