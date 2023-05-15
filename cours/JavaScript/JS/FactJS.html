@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fact</title>
+  <script>
+      function cal(x,y){
+          var s=x+y;
+          return s;
+      }
+alert("la somme est "+cal(5,9));
+    function factN(n){
+
+      ///var n=document.getElementById("f").value;
+      if (n>=0){
+        var f=1;
+        for (let i = 1; i <= n; i++) {
+          f*=i;
+        }
+        //alert("le fact de "+n+" = "+f);
+        document.getElementById("par1").innerHTML=" - le fact de "+n+" = "+f+
+                "  ///////" +" date : "+Date();
+      }else alert("la valeur doit etre sup ou egale a ZERO !.")
+
+    }
+    var  x=document.getElementById("f").value;
+
+    document.getElementById("c").addEventListener("click",factN(x));
+
+
+
+
+
+  </script>
+</head>
+<body><label for="f">Donner N : </label>
+<input type="number"  id="f" name="fact">
+<input type="button" value="N!" name="cal" id="c" >onclick="factN()"
+<p id="par1"></p>
+
+
+</body>
+</html>

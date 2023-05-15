@@ -1,0 +1,148 @@
+:root{
+    --background-color: rgba(106, 190, 177, 0.82); /* sets the value of a CSS variable */
+}
+
+body{
+    min-height: 100vh; /* sets the minimum height of the body to 100% of the viewport height */
+    display: flex; /* uses flexbox to align and justify the child elements */
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* sets the background color of the body */
+}
+
+.btn{
+    -moz-appearance: none; /* disables the default appearance of the button on Firefox */
+    -webkit-appearance: none; /* disables the default appearance of the button on WebKit browsers */
+    appearance: none; /* disables the default appearance of the button */
+    border: none; /* removes the border */
+    background: none; /* removes the background */
+    padding: 0; /* removes the padding */
+    color: var(--button-text-color); /* sets the text color using a CSS variable */
+    cursor: pointer; /* sets the cursor to a pointer */
+    font-family: 'Ropa Sans', Helvetica; /* sets the font family */
+    font-size: 1rem; /* sets the font size */
+
+    /* sets the values of several CSS variables */
+    --button-text-color: var(--background-color);
+    --button-text-color-hover: var(--button-background-color);
+    --border-color: #b0b0b0;
+    --button-background-color: #ff4039;
+    --highlight-color: #342929;
+    --button-inner-border-color: transparent;
+    --button-bits-color: var(--background-color);
+    --button-bits-color-hover: var(--button-background-color);
+
+    position: relative; /* sets the position to relative */
+    padding: 8px; /* sets the padding */
+    margin-bottom: 20px; /* sets the margin bottom */
+    text-transform: uppercase; /* sets the text to uppercase */
+    font-weight: bold; /* sets the font weight to bold */
+    font-size: 14px; /* sets the font size */
+    transition: all .15s ease; /* adds a transition effect to all properties */
+}
+
+.btn::before,
+.btn::after{
+    content: ''; /* sets the content to an empty string */
+    display: block; /* sets the display property to block */
+    position: absolute; /* sets the position to absolute */
+    right: 0; left: 0; /* sets the left and right positions to 0 */
+    height: calc(50% - 5px); /* sets the height to half of the button height minus 5px */
+    border: 1px solid #000000; /* sets the border style and color */
+    transition: all .15s ease; /* adds a transition effect to all properties */
+}
+
+.btn::before{
+    top: 0; /* sets the top position to 0 */
+    border-bottom-width: 0; /* removes the bottom border */
+}
+
+.btn::after{
+    bottom: 0; /* sets the bottom position to 0 */
+    border-top-width: 0; /* removes the top border */
+}
+
+.btn:active,
+.btn:focus{
+    outline: none; /* removes the outline when the button is active or focused */
+}
+
+.btn:active::before,
+.btn:active::after{
+    right: 3px; /* shifts the borders right by 3px when the button is active */
+    left: 3px; /* shifts the borders left by 3px when the button is active */
+}
+/* This rule sets the position of the pseudo-element that appears before the button when it is clicked */
+.btn:active::before{
+    top: 3px;
+}
+
+/* This rule sets the position of the pseudo-element that appears after the button when it is clicked */
+.btn:active::after{
+    bottom: 3px;
+}
+
+/* This rule sets the style for the inner content of the button */
+.btn__inner{
+    position: relative;
+    display: block;
+    padding: 20px 30px;
+    background-color: var(--button-background-color);
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px var(--button-inner-border-color);
+}
+
+/* This rule sets the style for the pseudo-element that appears before the button */
+.btn__inner::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: var(--button-bits-color);
+}
+
+/* This rule sets the style for the pseudo-element that appears after the button */
+.btn__inner::after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0; bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: var(--button-bits-color);
+    transition: all .90s ease;
+}
+
+/* This rule sets the style for the sliding effect that appears on hover */
+.btn__slide{
+    display: block;
+    position: absolute;
+    top: 0; bottom: -1px; left: -8px;
+    width: 0;
+    background-color: var(--highlight-color);
+    transform: skew(-15deg);
+    transition: all .6s ease;
+}
+
+/* This rule sets the style for the content of the button */
+.btn__content{
+    position: relative;
+    color: white;
+}
+
+/* This rule sets the style for the button on hover */
+.btn:hover{
+    color: var(--button-text-color-hover);
+}
+
+/* This rule sets the style for the sliding effect when the button is hovered */
+.btn:hover .btn__slide{
+    width: calc(100% + 15px);
+}
+
+/* This rule sets the style for the pseudo-element that appears after the button when it is hovered */
+.btn:hover .btn__inner::after{
+    background-color: var(--button-bits-color-hover);
+}

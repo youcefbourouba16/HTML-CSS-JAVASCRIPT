@@ -1,0 +1,62 @@
+div{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 300px ;
+
+
+}
+label {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 4px;
+
+
+
+}
+#cal{
+    border: solid green;
+    background-color: cadetblue;
+    border-radius: 10px 5px ;
+    color: white;
+    font-size: large;
+    padding: 4px;
+
+}
+#clear{
+    border: solid green;
+    background-color: cadetblue;
+    border-radius: 10px 5px ;
+    color: white;
+    font-size: large;
+    margin: 3px 30px;
+
+}
+#cal:hover,#clear:hover{
+    color: white;
+    background-color: greenyellow;
+    border: none;
+    transition: all 0.9s ease;
+
+
+}
+.input:hover{
+    color: white;
+    background-color: greenyellow;
+    border: none;
+
+    width: 50px;
+    height: 30px;
+}
+
+.input{
+    border: solid green;
+    background-color: cadetblue;
+    border-radius: 8px 3px ;
+    color: white;
+    font-size: large;
+    margin: 3px 3px;
+    transition: all 0.3s ease;
+
+}
+
+
