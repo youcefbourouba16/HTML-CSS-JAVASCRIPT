@@ -8,34 +8,40 @@
 
 <body>
 <div>
-    <table>
 
-        <tr>
-            <td><label for="n1" style="padding: 26px;">- Donner num 1 :</label></td><td><input type="number" id="n1" name="name" required></td>
-        </tr>
-        <tr>
-            <td><label for="n2" style="padding: 26px;">- Donner num 2 :</label></td><td><input type="number" id="n2" name="name" required></td>
-        </tr>
-        <tr></tr>
-        <tr>
-            <td>
-                <button type="submit" value="+" id="plus" class="input" onclick="somme()">+</button>
-                <button type="submit" value="+" id="min" class="input" onclick="subst()">-</button>
-                <button type="submit" value="+" id="produit" class="input" onclick="produit()">*</button>
-                <button type="submit" value="+" id="div" class="input" onclick="div()">%</button>
-            </td> <td>
-            <button type="reset" id="clear">CLEAR</button></td>
-        </tr>
+        <table>
 
-        <tr>
-            <td colspan="2" ><label id="result"> </label></td>
-        </tr>
+            <tr>
+                <td><label for="n1" style="padding: 26px;">- Donner num 1 :</label></td><td><input type="number" id="n1" name="num1" ></td>
+            </tr>
+            <tr>
+                <td><label for="n2" style="padding: 26px;">- Donner num 2 :</label></td><td><input type="number" id="n2" name="num2" ></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td>
+                    <button type="submit" value="+" id="plus" class="input" onclick="somme()">+</button>
+                    <button type="submit" value="+" id="min" class="input" onclick="subst()">-</button>
+                    <button type="submit" value="+" id="produit" class="input" onclick="produit()">*</button>
+                    <button type="submit" value="+" id="div" class="input" onclick="div()">%</button>
+                </td> <td>
+                <button id="clear" onclick="cleanIN()">CLEAR</button>
 
 
 
-    </table>
 
-</div>
+
+            </tr>
+
+            <tr>
+                <td colspan="2" ><label id="result"> </label></td>
+            </tr>
+
+
+
+        </table>
+
+
 
 
 <script src="somme.js"></script>
