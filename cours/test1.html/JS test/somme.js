@@ -64,7 +64,7 @@ function div() {
         var n2 = parseFloat(document.getElementById("n2").value);
         if (n2 != 0) {
             let s = n1 / n2;
-            document.getElementById("result").innerHTML = "-le Produit de " + n1 + " et " + n2 + " est = " + s;
+            document.getElementById("result").innerHTML = "-La division de " + n1 + " et " + n2 + " est = " + s;
         } else alert("num 2 doit etre diferent a ZERO. !")
     }
 

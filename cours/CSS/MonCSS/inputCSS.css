@@ -1,4 +1,5 @@
 
+
 /* Set the font family for all elements within the .input-form class */
 .input-form {
     font-family: Arial, Helvetica, sans-serif;
@@ -17,13 +18,14 @@
     /* Set the background color to transparent */
     background: none;
     /* Add some padding to the input field */
-    padding: 17px;
+    padding: 14px 33px;
     /* Set the font size to 13 pixels */
     font-size: 13px;
     /* Set the text color to black */
     color: #000000;
     /* Set the transition for the border change */
     transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+
 }
 
 /* Style for the label that appears when the input is focused */
@@ -31,21 +33,18 @@
     /* Set the position of the label to be absolute */
     position: absolute;
     /* Set the position of the label to be 15 pixels from the left */
-    left: 15px;
+    left: 13px;
+    top: 313px;
+
     /* Set the text color to a light gray */
     color: #666666;
     /* Make the label unclickable */
     pointer-events: none;
-    /* Move the label up by 1 rem (16 pixels) */
-    transform: translateY(1rem);
-    /* Set the transition for the label movement */
-    transition: 150ms cubic-bezier(0.4,0,0.2,1);
     padding: 2px 2px;
-    color: cadetblue;
-    font-size: large;
+    color: #4d4d4d;
+    font-size: 16px;
     font-family: "Comic Sans MS";
 }
-
 /* Style for the input when it is focused or valid */
 .input:focus, input:valid {
     /* Remove the default outline */
@@ -61,13 +60,15 @@
 /* Style for the label when the input is focused or valid */
 .input:focus ~ label, input:valid ~ label {
     /* Move the label up and scale it down */
-    transform: translateY(-95%) scale(0.9);
+    transform: translateX(+75%)  scale(1);
     /* Add some padding to the label */
-    padding: 0 .2em;
+    padding: 13px 7px ;
     /* Set the color of the label to a semi-transparent black */
     color: #000000be;
     /* Move the label to the right by 80 pixels */
     left: 80px;
+    transition: 0.3s;
+
 }
 
 /* Style for the input when it is hovered */
@@ -75,9 +76,31 @@
     /* Add a thicker border with a dark gray color */
     border: solid 1.9px #000002;
     /* Slightly increase the size of the input */
-    transform: scale(1.03);
+    transform: scale(1.05);
     /* Add a shadow to the input */
     box-shadow: 1px 1px 5px rgba(133, 133, 133, 0.523);
     /* Set the transition for the border change */
     transition: border-color 1s ease-in-out;
 }
+#btn1{
+
+    background: rgba(13, 211, 182, 0.7);
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 600;
+    font-size: 14px;
+    border: 2px solid black;
+    border-radius: 13px;
+    box-shadow: 0.1em 0.1em;
+    margin: 4px;
+}
+
+#btn1:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 8px 8px;
+    color: #000000;
+    background-color: rgba(255, 79, 64, 0.71);
+
+}
+
+

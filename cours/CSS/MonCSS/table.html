@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Liste d'achats</title>
+  <link rel="stylesheet" href="tableCss.css">
+</head>
+<body>
+<h1>--Liste d'achats--</h1>
+<table>
+  <tr>
+    <th>Catégorie</th>
+    <th>Article</th>
+    <th >Prix</th>
+    <th>quantité</th>
+    <th colspan="2">TOTAL</th>
+  </tr>
+  <tr>
+    <td class="category" colspan="3">Fruits et légumes</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Pommes</td>
+    <td class="price">300 DA/kg</td>
+    <td><label >2.2</label> KG</td>
+    <td class="PQ">660 DA</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Bananes</td>
+    <td class="price">220 DA/kg</td>
+    <td><label >1.7</label> KG</td>
+    <td class="PQ">374 DA</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Tomates</td>
+    <td class="price">150 DA/kg</td>
+    <td><label >2.3</label> KG</td>
+    <td class="PQ"> 345 DA</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Carottes</td>
+    <td class="price">100 DA/kg</td>
+    <td><label >1.2</label> KG</td>
+    <td class="PQ">120 DA</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Poires</td>
+    <td class="price">280 DA/kg</td>
+    <td><label >1.0</label> KG</td>
+    <td class="PQ">280 DA</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Concombres</td>
+    <td class="price">180 DA/kg</td>
+    <td><label>1.1</label> KG</td>
+    <td class="PQ">198 DA</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Poivrons</td>
+    <td class="price">250 DA/kg</td>
+    <td><label >1.9</label> KG</td>
+    <td class="PQ">475 DA</td>
+  </tr>
+  <tr>
+    <td class="category" colspan="3">Produits laitiers</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Lait entier</td>
+    <td class="price">120 DA/L</td>
+    <td><label >2.0</label> KG</td>
+    <td class="PQ">240 DA</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Yaourt nature</td>
+    <td class="price">18 DA/unité</td>
+    <td><label>9</label> KG</td>
+    <td class="PQ">162 DA</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Fromage cheddar</td>
+    <td class="price">400 DA/kg</td>
+    <td><label>0.3</label> KG</td>
+    <td class="PQ">120 DA</td>
+
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="category" colspan="3">total</td>
+    <td></td>
+    <td></td>
+    <td id="total"> 3,332 DA </td>
+  </tr>
+</table>
+<p id="date"></p>
+<script>
+  document.getElementById("date").innerHTML = "la date :"+ Date();
+
+</script>
+</body>
+</html>

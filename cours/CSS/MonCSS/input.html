@@ -3,18 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  <link rel="stylesheet" href="inputCSS.css">
+    <link rel="stylesheet" href="inputCSS.css">
 </head>
 
 <body>
+<form action="" method="post">
+<div class="input-form">
+    <input class="input" name="text" type="text" onclick="onlik()" required oninput="changer()" >
+    <label class="textUser" id="lb1" >-taper ici pour rechercher</label>
+</div>
+</form>
 
+<script>
+    function onlik() {
 
+        const lb1 = document.getElementById("lb1");
+        lb1.textContent = "";
+         // Adjust the duration (in milliseconds) as desired
+    }
+    function changer() {
+        // Select the label element
 
-    <div class="input-form">
-        <input class="input" name="text" type="text" required="">
-        <label class="textUser">Email :</label>
-    </div>
+        const labelElement = document.getElementById("lb1");
 
+        // Create a new button element
+        const buttonElement = document.createElement("button");
+        buttonElement.textContent = "Rechercher";
+        buttonElement.id="btn1";
+        buttonElement.type="submit";
 
+        // Clone and replace the label element to remove existing event listeners
+        const clonedLabelElement = labelElement.cloneNode(true);
+        labelElement.parentNode.replaceChild(clonedLabelElement, labelElement);
+        // Replace the label element with the button element in the DOM
+        clonedLabelElement.parentNode.replaceChild(buttonElement, clonedLabelElement);
+    }
+</script>
 </body>
 </html>

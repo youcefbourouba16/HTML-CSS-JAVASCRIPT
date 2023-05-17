@@ -1,0 +1,57 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Collapses the borders of the table */
+    margin: 25px 0; /* Sets margin around the table (25px top and bottom, 0 left and right) */
+    font-size: 16px; /* Sets the font size of the text inside the table */
+    font-family: sans-serif; /* Sets the font family for the text inside the table */
+    min-width: 200px; /* Sets the minimum width of the table */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* Adds a box shadow to the table */
+}
+
+/* Sets padding, text alignment, and border for table cells */
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Styles the category row with bold text, uppercase, and white text on a background color */
+.category {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: rgba(4, 24, 24, 0.71);
+}
+
+/* Aligns the text to the right within price cells */
+.price {
+    text-align: right;
+}
+
+/* Aligns the text to the right and applies italic font style and gray color to the date element */
+#date {
+    text-align: right;
+    font-style: italic;
+    color: #888;
+}
+
+/* Applies bold font weight and larger font size to the total element */
+#total{
+    font-weight: 900;
+    font-size: large;
+}
+.PQ{
+    font-weight: 600;
+}
