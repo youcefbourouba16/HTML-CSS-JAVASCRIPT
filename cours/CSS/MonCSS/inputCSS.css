@@ -23,8 +23,8 @@
     font-size: 13px;
     /* Set the text color to black */
     color: #000000;
-    /* Set the transition for the border change */
-    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+
+
 
 }
 
@@ -37,7 +37,7 @@
     top: 313px;
 
     /* Set the text color to a light gray */
-    color: #666666;
+
     /* Make the label unclickable */
     pointer-events: none;
     padding: 2px 2px;
@@ -46,7 +46,7 @@
     font-family: "Comic Sans MS";
 }
 /* Style for the input when it is focused or valid */
-.input:focus, input:valid {
+.input:focus {
     /* Remove the default outline */
     outline: none;
     /* Add a shadow to the input field */
@@ -57,19 +57,7 @@
     transition: background 4s ease-in-out;
 }
 
-/* Style for the label when the input is focused or valid */
-.input:focus ~ label, input:valid ~ label {
-    /* Move the label up and scale it down */
-    transform: translateX(+75%)  scale(1);
-    /* Add some padding to the label */
-    padding: 13px 7px ;
-    /* Set the color of the label to a semi-transparent black */
-    color: #000000be;
-    /* Move the label to the right by 80 pixels */
-    left: 80px;
-    transition: 0.3s;
 
-}
 
 /* Style for the input when it is hovered */
 .input:hover {
@@ -98,7 +86,7 @@
 #btn1:hover {
     transform: translate(-4px, -4px);
     box-shadow: 8px 8px;
-    color: #000000;
+    color: #ffffff;
     background-color: rgba(255, 79, 64, 0.71);
 
 }

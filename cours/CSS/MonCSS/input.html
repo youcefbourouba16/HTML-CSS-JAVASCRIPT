@@ -7,9 +7,10 @@
 </head>
 
 <body>
-<form action="" method="post">
+<form action="" method="get">
 <div class="input-form">
-    <input class="input" name="text" type="text" onclick="onlik()" required oninput="changer()" >
+    <input class="input" name="rech" type="text" onclick="onlik()"
+           required oninput="changer()" >
     <label class="textUser" id="lb1" >-taper ici pour rechercher</label>
 </div>
 </form>
@@ -17,8 +18,8 @@
 <script>
     function onlik() {
 
-        const lb1 = document.getElementById("lb1");
-        lb1.textContent = "";
+        const c = document.getElementById("lb1");
+        c.textContent = "";
          // Adjust the duration (in milliseconds) as desired
     }
     function changer() {
