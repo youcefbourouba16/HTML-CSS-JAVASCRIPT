@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", "Times New Roman";
+}
+
+body {
+  background-color: antiquewhite;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 350px 2fr;
+  grid-template-rows: 1fr 500px 1fr;
+  grid-template-areas:
+    ". title ."
+    ". calculator ."
+    ". . .";
+  background-image: linear-gradient(pink, purple);
+}
+
+.calculator {
+  grid-area: calculator;
+  outline: 1px solid gray;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  box-shadow: 0 0 20px blueviolet;
+  background-color: rgba(233, 182, 247, 0.753);
+  padding: 20px;
+}
+
+.display {
+  display: block;
+  color: black;
+  width: 100%;
+  height: 90px;
+  padding: 2px;
+  margin: 0 auto;
+  border: none;
+  text-align: end;
+  background-image: linear-gradient(
+    rgb(237, 211, 245),
+    rgba(239, 210, 247, 0.767)
+  );
+}
+
+.display.d1 {
+  height: 50px;
+  font-size: 1.1rem;
+  border-radius: 15px 15px 0 0;
+  padding: 0 15px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: start;
+}
+
+.display.d2 {
+  font-weight: 500;
+  height: 70px;
+  font-size: 2.4rem;
+  border-radius: 0 0 20px 20px;
+  padding: 0 15px;
+}
+
+.buttons {
+  width: 100%;
+  height: 320px;
+  margin-top: 20px;
+  padding: 2px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "op1 op2"
+    "op1 op2"
+    "op1 op2"
+    "op1 op2"
+    "op1 op2";
+}
+
+button {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  box-shadow: 0 0 13px rgb(152, 119, 179);
+}
+
+button:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+.row1 {
+  grid-area: op1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  margin: 0 5px;
+}
+.row2 {
+  grid-area: op2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.number {
+  background-color: rgb(225, 177, 231);
+}
+.operator {
+  background-color: rgb(179, 207, 149);
+}
+.equal {
+  height: 115px;
+  border-radius: 20px;
+  background-color: rgb(177, 115, 235);
+}
+.clear {
+  background-color: rgb(177, 224, 224);
+}
