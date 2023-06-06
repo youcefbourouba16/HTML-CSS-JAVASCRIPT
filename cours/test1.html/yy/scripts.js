@@ -80,12 +80,26 @@ function passwordVerfication(){
         error.innerHTML="Ces mots de passe ne correspondent pas. Veuillez réessayer.";
     }else error.innerHTML = "";
 }
-function eye(){
-    let eye1=document.getElementById('eye');
-    eye1.src="eye.svg";
-    eye1.alt="eye hide";
+function eyee() {
+    let img = document.getElementById("eye");
 
+    if (img.src.includes("eye.svg")) {
+        img.src = "eye-password-hide-svgrepo-com.svg";
+    } else {
+        img.src = "eye.svg";
+    }
+
+    var x = document.getElementById("pass-signin");
+
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+
+    console.log("eye function worked");
 }
+
 /*
 +++++++++++++++ calculatrice+++++++++++++++++++++++++++++++++++++++++++++++++++
  */
@@ -103,7 +117,7 @@ var operator = "";
 var x = 0;
 
 function operations(symbol) {
-    if (x == 1) {
+    if (x == "1") {
         if (symbol == "+" || symbol == "-" || symbol == "*" || symbol == "/") {
             operator = "";
             operator = display[1].value;
@@ -114,6 +128,7 @@ function operations(symbol) {
         }
     }
     if (symbol == "=") {
+
         if (operator != "") {
             let operation = operator.replace(")(", ")*(");
             try {
@@ -127,6 +142,7 @@ function operations(symbol) {
             }
             x = 1;
         }
+
     } else if (symbol == "C") {
         display[0].value = "";
         display[1].value = "0";
@@ -134,7 +150,9 @@ function operations(symbol) {
     } else if (symbol == "<") {
         operator = operator.substring(0, operator.length - 1);
         display[0].value = operator;
-    } else {
+    }
+
+    else {
         operator += symbol;
         display[0].value = operator;
     }
@@ -172,4 +190,5 @@ function stopDrag() {
 }
 
 div.addEventListener('mousedown', startDrag);
+
 

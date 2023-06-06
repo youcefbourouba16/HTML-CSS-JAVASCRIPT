@@ -7,18 +7,23 @@
 <script src="scripts.js"></script>
 
 <link rel="stylesheet" href="form1.css">
-<body>
 <header>
-    <div class="container">
-        <button type="submit" class="btn_login" onclick="openPopup()"  id="login">Cliquez</button>
+    <nav class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Gallery</li>
+            <li>Contact us</li>
+        </ul>
+        <button class="btn" onclick="openCal()"  id="btn_calculator"><span class="btn__inner">Cliquez</button>
+        <a class="bt"><button type="submit" class="btn" onclick="openPopup()"  id="login">
+                    <span class="btn__slide"></span>
+                    <span class="btn__content">LOGIN / sign up</span>
+                </span></button></a>
+    </nav>
 
-    </div>
-    <div class="container">
-        <button   onclick="openCal()"  id="btn_calculator">calculatrice</button>
-
-    </div>
 </header>
-
+<body>
 <form action="" method="post">
 <div class="login-html" id="test">
 
@@ -36,13 +41,12 @@
             </div>
             <div class="group">
                 <label for="pass-signin" class="label">Mot de passe</label>
-                <input id="pass-signin" type="password" class="input" data-type="password" required >
-
-                <img  src="eye-password-hide-svgrepo-com.svg" alt="eye image" id="eye" onclick="eye()">
+                <input id="pass-signin" type="password" class="input"  required >
+                <img src="eye.svg" id="eye" onclick="eyee()" >
             </div>
             <div class="group">
                 <h1></h1>
-                <input id="check" type="checkbox" class="check" checked>
+                    <input id="check" type="checkbox" class="check" checked>
                 <label for="check"><span class="icon"></span> Rester connecté</label>
             </div>
             <div class="group">
@@ -124,9 +128,6 @@
     </section>
 </div>
 
-<div id="youcefbourouba">
-    <p>I'm a web</p>
-</div>
 
 
 <script src="scripts.js"></script>
