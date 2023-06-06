@@ -7,23 +7,56 @@
 <script src="scripts.js"></script>
 
 <link rel="stylesheet" href="form1.css">
+
+
+<link rel="stylesheet" href="nav.css">
+
+<body>
 <header>
-    <nav class="nav">
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Gallery</li>
-            <li>Contact us</li>
+    <a class="logo"><img src="pngegg.png" id="logo" alt="logo"></a>
+    <nav>
+        <ul class="nav__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Mes Projets</a></li>
+            <li onclick="showMenu(this)" ><a >Code source</a></li>
+            <li><a href="#">About</a></li>
+
         </ul>
-        <button class="btn" onclick="openCal()"  id="btn_calculator"><span class="btn__inner">Cliquez</button>
-        <a class="bt"><button type="submit" class="btn" onclick="openPopup()"  id="login">
-                    <span class="btn__slide"></span>
-                    <span class="btn__content">LOGIN / sign up</span>
-                </span></button></a>
+        <div id="popupMenu">
+            <ul>
+                <li>Action 1</li>
+                <li>Action 2</li>
+                <li>Action 3</li>
+            </ul>
+        </div>
     </nav>
+    <a class="cta" href="#"></a>
 
 </header>
-<body>
+<div class="overlay">
+    <a class="close">&times;</a>
+    <div class="overlay__content">
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+    </div>
+</div>
+<div class="bt">
+    <button class="btn" type="submit" class="btn" onclick="openPopup()"  id="login">
+                <span class="btn__inner">
+                    <span class="btn__slide"></span>
+                    <span class="btn__content">LOGIN / sign Up</span>
+                </span>
+    </button>
+</div>
+<div class="bt">
+    <button class="btn" onclick="openCal()"  id="btn_calculator">
+                <span class="btn__inner">
+                    <span class="btn__slide"></span>
+                    <span class="btn__content">calculatrice</span>
+                </span>
+    </button>
+</div>
 <form action="" method="post">
 <div class="login-html" id="test">
 
@@ -129,7 +162,7 @@
 </div>
 
 
-
 <script src="scripts.js"></script>
+<script src="nav.js"></script>
 </body>
 </html>

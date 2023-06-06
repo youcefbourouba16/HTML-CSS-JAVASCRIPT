@@ -4,9 +4,9 @@
 .clearfix:after{clear:both;display:block}
 a{color:inherit;text-decoration:none}
 #login{
-    position: relative;
-    left: 95%;
-    top: 50%;
+    position: absolute;
+left: 85%;
+    top: 3%;
 }
 /*
 .login-wrap {
@@ -19,7 +19,28 @@ a{color:inherit;text-decoration:none}
     position: relative;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
 }*/
+body{
+    background-image: url("pexels-rovenimagescom-949587.jpg");
 
+
+
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+    z-index: -1;
+}
+
+body h1 {
+    position: relative;
+    z-index: 1;
+    color: #ffffff; /* Set the color of the text */
+}
 .login-html{
     font:600 16px/18px 'Open Sans',sans-serif;
     border-radius: 30px ;
@@ -32,8 +53,10 @@ a{color:inherit;text-decoration:none}
     transform: translate(100%,-40%) scale(0.1);
     position:absolute;
     padding:90px 70px 50px 70px;
-    background:rgba(40,57,101,.9);
+    background: rgb(40, 57, 101);
     box-shadow: 0 12px 15px 0 rgb(255, 8, 0), 0 17px 50px 0 rgba(0, 0, 0, 0.78);
+
+
 
 
 
@@ -220,7 +243,7 @@ a{color:inherit;text-decoration:none}
 #eye{
     width: 7%;
     position: absolute;
-    top: 42%;
+    top: 36%;
     left: 88%;
     cursor: pointer;
 }
@@ -364,119 +387,57 @@ a{color:inherit;text-decoration:none}
 #btn_calculator{
     position: absolute;
     left: 45%;
-    top: 4%;
-}
-.nav {
-    position: fixed;
-    top: 0;
-    left: 10%;
-    width: 70%;
-    background: #1E1F25;
-    z-index: 9000;
-}
-
-.nav ul {
-    display: flex;
-    width: 100%;
-    height: 20%;
-    margin: auto;
-    max-width: 1000px;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.nav li {
-    padding: 1rem 2rem 1.15rem;
-    text-transform: uppercase;
-    cursor: pointer;
-    color: #ebebeb;
-    min-width: 80px;
-    margin: auto;
-}
-.nav li:hover {
-    background-image: url('pngtree-game-button-technology-button-colorful-technology-button-source-file-start-button-png-image_462025.png');
-    background-size: 100% 100%;
-    color: #fdfdfd;
-    animation: spring 300ms ease-out;
-    text-shadow: 0 -1px 0 #ef816c;
-    font-weight: bold;
-}
-.nav li:active {
-    transform: translateY(4px);
-}
-@keyframes spring {
-    15% {
-        -webkit-transform-origin: center center;
-        -webkit-transform: scale(1.2, 1.1);
-    }
-    40% {
-        -webkit-transform-origin: center center;
-        -webkit-transform: scale(0.95, 0.95);
-    }
-    75% {
-        -webkit-transform-origin: center center;
-        -webkit-transform: scale(1.05, 1);
-    }
-    100% {
-        -webkit-transform-origin: center center;
-        -webkit-transform: scale(1, 1);
-    }
-}
-
-.shameless-plug{
-    position: absolute;
-    bottom: 10px;
-    right: 0;
-    padding: 8px 20px;
-    color: #ccc;
-    text-decoration: none;
+    top: 50%;
 }
 :root{
     --background-color: rgba(106, 190, 177, 0.82);
 }
+
+
+
 .bt .btn{
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
     border: none;
     background: none;
-
     color: var(--button-text-color);
     cursor: pointer;
-    font-family: 'Ropa Sans', Helvetica;
-    font-size: 1rem;
     --button-text-color: var(--background-color);
     --button-text-color-hover: var(--button-background-color);
-    --border-color: #b0b0b0;
-    --button-background-color: #ff4039;
-    --highlight-color: #342929;
+    --button-background-color: rgba(6, 63, 148, 0.7);
+    --highlight-color: green;
     --button-inner-border-color: transparent;
     --button-bits-color: var(--background-color);
     --button-bits-color-hover: var(--button-background-color);
-
-    position: relative;
-    padding: 8px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-
-    font-size: 14px;
+    position: relative; /* sets the position to relative */
+    padding: 8px; /* sets the padding */
+    margin-bottom: 20px; /* sets the margin bottom */
+    text-transform: uppercase; /* sets the text to uppercase */
+    font-weight: bold; /* sets the font weight to bold */
+    font-size: 14px; /* sets the font size */
     transition: all .15s ease;
+
+
 }
-.bt .btn::after{
-    bottom: 0;
-    border-top-width: 0;
+
+.bt .btn:active::after{
+    bottom: 3px;
 }
+
+
 .bt .btn__inner{
-    border-radius: 30px;
+    border-radius: 14px 40px 30px 90px;
     position: relative;
     display: block;
-    padding: 20px 30px;
+    padding: 17px 30px;
     background-color: var(--button-background-color);
     overflow: hidden;
     box-shadow: inset 0px 0px 0px 1px var(--button-inner-border-color);
 }
-.bt .btn__slide{
 
+
+.bt .btn__slide{
     display: block;
     position: absolute;
     top: 0; bottom: -1px; left: -8px;
@@ -484,19 +445,43 @@ a{color:inherit;text-decoration:none}
     background-color: var(--highlight-color);
     transform: skew(-15deg);
     transition: all .6s ease;
+
 }
+
+
 .bt .btn__content{
     position: relative;
     color: white;
-}
-.bt .btn:hover{
-    color: var(--button-text-color-hover);
 }
 
 
 .bt .btn:hover .btn__slide{
     width: calc(100% + 15px);
+    color: #0f0c29;
 }
+#popupMenu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 10px;
+}
+
+#popupMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#popupMenu ul li {
+    cursor: pointer;
+    padding: 5px;
+}
+
+#popupMenu ul li:hover {
+    background-color: #f2f2f2;
+}
+
 
 
 

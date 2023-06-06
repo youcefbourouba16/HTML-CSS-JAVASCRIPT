@@ -191,4 +191,17 @@ function stopDrag() {
 
 div.addEventListener('mousedown', startDrag);
 
+function showMenu(item) {
+    var popupMenu = document.getElementById('popupMenu');
+    popupMenu.style.display = 'block';
+    popupMenu.style.left = item.offsetLeft + 'px';
+    popupMenu.style.top = (item.offsetTop + item.offsetHeight) + 'px';
+    console.log("worked")
+}
 
+document.addEventListener('click', function(event) {
+    var popupMenu = document.getElementById('popupMenu');
+    if (!popupMenu.contains(event.target)) {
+        popupMenu.style.display = 'none';
+    }
+});
