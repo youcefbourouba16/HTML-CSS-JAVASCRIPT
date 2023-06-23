@@ -1,5 +1,5 @@
 
-*,:after,:before{box-sizing:border-box}
+*:after,:before{box-sizing:border-box}
 .clearfix:after,.clearfix:before{content:'';display:table}
 .clearfix:after{clear:both;display:block}
 a{color:inherit;text-decoration:none}
@@ -32,7 +32,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+    backdrop-filter: blur(8px); /* Adjust the blur amount as needed */
     z-index: -1;
 }
 
@@ -55,11 +55,6 @@ body h1 {
     padding:90px 70px 50px 70px;
     background: rgb(40, 57, 101);
     box-shadow: 0 12px 15px 0 rgb(255, 8, 0), 0 17px 50px 0 rgba(0, 0, 0, 0.78);
-
-
-
-
-
 }
 .open-login-html{
     transform: scale(1);
@@ -69,8 +64,6 @@ body h1 {
 
 .login-html .sign-in-htm,
 .login-html .sign-up-htm{
-
-
     transform:rotateY(180deg);
     backface-visibility:hidden;
     transition:all .4s linear;
@@ -254,8 +247,10 @@ body h1 {
 .calculatrice{
 
     width: 24%;
+    min-width: 24%;
+    max-height: 30%;
     position: absolute;
-    left: 35%;
+    left: 5%;
     top: 15%;
     visibility: hidden;
     transition: transform 0.8s, top 0.8s;
@@ -279,7 +274,7 @@ body h1 {
        visibility: visible;
      left: 10%;
      top: 15%;
-       transform: translate(100%,-40%) scale(1);
+       transform: translate(-4%,-40%) scale(1);
 
 }
 
@@ -386,8 +381,10 @@ body h1 {
 }
 #btn_calculator{
     position: absolute;
-    left: 45%;
-    top: 50%;
+    left: 35%;
+    top: 60%;
+    width: 30%;
+
 }
 :root{
     --background-color: rgba(106, 190, 177, 0.82);
@@ -481,8 +478,30 @@ body h1 {
 #popupMenu ul li:hover {
     background-color: #f2f2f2;
 }
+p{
+    font-family: "Cascadia Code";
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+    font-style: initial;
+    position: absolute;
+    top: 40%;
+    width: 30%;
+    left: 35%;
+    border-top: solid 15px blue;
+    color: #15ff01;
+    z-index: -1;
+}
+@media screen and (max-width:800px){
+    p {
+        font-size: 16px;
 
+    }
+    .btn{
+        visibility: hidden;
+    }
 
+}
 
 
 

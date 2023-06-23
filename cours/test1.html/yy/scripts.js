@@ -41,7 +41,7 @@ function emailvalidation(){
     var user_signin = document.getElementById("user-signin");
 
     if (!user_signin.value.match((/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/))){
-        email_error.innerHTML = "Veuillez saisir une adresse e-mail valide ";
+        email_error.innerHTML = "Please enter a valid email address.";
         return false;
     }else email_error.innerHTML = "";
 
@@ -52,19 +52,19 @@ function passwordvalidation() {
     password_error.innerHTML = "";
     input=input.trim();
     if (input.length < 6) {
-        password_error.innerHTML = "Le mot de passe doit comporter au moins 6 caractères";
+        password_error.innerHTML = "The password must contain at least 6 characters.";
         return false;
     } else password_error.innerHTML = "";
     if (!input.match(/[a-z]/)) {
-        password_error.innerHTML = "Le mot de passe doit contenir au moins une lettre minuscule";
+        password_error.innerHTML = "The password must contain at least one lowercase letter.";
         return false;
     } else password_error.innerHTML = "";
     if (!input.match(/[A-Z]/)) {
-        password_error.innerHTML = "Le mot de passe doit contenir au moins une lettre majuscule";
+        password_error.innerHTML = "The password must contain at least one lowercase letter.";
         return false;
     } else password_error.innerHTML = "";
     if (!input.match(/\d/)) {
-        password_error.innerHTML = "Le mot de passe doit contenir au moins un chiffre";
+        password_error.innerHTML = "The password must contain at least one digit.";
         return false;
     } else
 
@@ -77,7 +77,7 @@ function passwordVerfication(){
     let input2=document.getElementById("pass-repeat").value;
     let error=document.getElementById("password-repeat-error");
     if (!input1.match(input2)){
-        error.innerHTML="Ces mots de passe ne correspondent pas. Veuillez réessayer.";
+        error.innerHTML="These passwords do not match. Please try again.";
     }else error.innerHTML = "";
 }
 function eyee() {
@@ -96,8 +96,6 @@ function eyee() {
     } else {
         x.type = "password";
     }
-
-    console.log("eye function worked");
 }
 
 /*
