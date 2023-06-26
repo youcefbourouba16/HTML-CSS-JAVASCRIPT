@@ -32,9 +32,7 @@ body {
     margin-top: 0;
 }
 .main_nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 10px;
+
 }
 .main_nav .logo {
     width: 175px;
@@ -94,6 +92,13 @@ body {
     stroke-dashoffset: -32.42;
 }
 
+.dropdown_menu{
+    position: relative;
+    left: 80%;
+    top: 30%;
+    color: #232222;
+
+}
 @media (max-width: 1075px) {
     #labelkhra{
         display: none;
