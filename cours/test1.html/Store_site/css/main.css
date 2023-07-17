@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+body{
+  font-family: sans-serif;
+  overflow: hidden;
+  user-select: none;
+}
+/*
+/////////////////////  header  ////////////////////////////////
+ */
+.detait {
+  padding-top: 7px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: white;
+
+
+  background-color: #006500;
+  list-style: none;
+}
+.detait_1{
+  margin-left: 4%;
+  display: flex;
+}
+.detait_1 img{
+  height: 20px;
+  padding-right: 10px;
+}
+
+.detait_3{
+  margin-right: 3%;
+  display: flex;
+
+}
+.detait .detait_3 .drop_list1{
+  border: none;
+  display: flex;
+  color: #ffffff;
+  width: 55px;
+  padding: 4px;
+  background-color: transparent;
+  cursor: pointer;
+
+}
+.detait .detait_3 .drop_list2{
+  border: none;
+  display: flex;
+  color: #ffffff;
+  width: 90px;
+  padding: 4px;
+  background-color: transparent;
+  cursor: pointer;
+
+}
+
+/*
+////////////////////// nav  ///////////////////////
+ */
+.categories_stylr_table{
+  background-color: rgba(236, 236, 236, 0.74);
+  border-radius: 10px 50px 50px 50px;
+  backdrop-filter: blur(40px);
+
+}
+nav{
+  height: 75px;
+
+}
+nav img{
+  position: absolute;
+  left: 3%;
+}
+nav ul {
+  float: left;
+  margin-left: 240px;
+  padding: 0;
+  position: relative;
+
+}
+nav ul li{
+  position: relative;
+  list-style: none;
+  display: inline-block;
+
+}
+nav ul li a{
+
+  display: block;
+  padding-left: 18px;
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight:600;
+  color: black;
+  transition: .2s;
+  padding-bottom: 4px;
+}
+nav ul li a:hover{
+  font-weight: 800;
+  font-size: 19px;
+  color: #009600;
+}
+nav ul ul{
+  position: absolute;
+  top: 77px;
+  left: -230px;
+  width: 600px;
+  line-height: 50px;
+  backdrop-filter: blur(16px);
+  font-size: 22px;
+  display: none;
+  transition: .4s;
+  padding-bottom: 90px;
+}
+nav ul li:hover > ul{
+  display: block;
+  transition: .4s;
+}
+#categories{
+  padding-bottom: 40px;
+}
+
+
+/*
+///////////////////////SRAECH BAR///////////////////
+ */
+
+.search {
+  position: absolute;
+  left: 58%;
+  top: 9.5%;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  transition: all ease-in-out .3s;
+}
+
+
+.search__input {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  border: none;
+  color: #646464;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  width: 17em;
+
+
+  transition:  .5s;
+  margin-right: -2rem;
+
+}
+.search__input:hover, .search__input:focus {
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.17);
+}
+
+.search__input:focus {
+  outline: none;
+  background-color: transparent;
+
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: #1f1f1f;
+}
+
+.search__input:focus + .search__button {
+  background-color: transparent;
+}
+
+.search__button {
+  border: none;
+
+  background-color: transparent;
+  margin-top: .1em;
+}
+
+.search__button:hover {
+  cursor: pointer;
+}
+
+.search__icon {
+
+  height: 1.3em;
+  width: 1.3em;
+  fill: #1e1e1e;
+  background-color: transparent;
+}
+
+
+
+.search_change{
+  left: 28%;
+
+}
+.search__input_change{
+  width: 600px;
+}
+
+.rest_change{
+  display: none;
+}
+
+/*
+popular
+ */
+
+.popular {
+  z-index: 1;
+  position: absolute;
+  width: 575px;
+  height: 269px;
+  top: 18%;
+  left: 30%;
+  border-radius: 20px 20px 20px 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.popular td{
+  background-color: rgba(161, 161, 161, 0.3);
+  width: 350px;
+  border-radius: 10px 10px 10px 10px;
+}
+.popular tr{
+  border: solid black;
+  width: 42%;
+
+}
+.popular tr img {
+  position: relative;
+  float: left;
+  padding-left: 0;
+  padding-right: 25px;
+  width: 80px;
+  height: auto;
+}
+
+.popular tr .space{
+  height: 10px;
+
+
+
+}
+
+.popular tr .label_size1 {
+  position: relative;
+  font-weight: 900;
+  font-size: 16px ;
+  margin-bottom: 30px;
+}
+.popular tr .label_size2 {
+  position: relative;
+  font-size: 12px ;
+  padding-top: 20px;
+}
+
+
+
